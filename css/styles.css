@@ -1,3 +1,30 @@
 body{
-    color:blue
+    color:blue;
+}
+textarea {
+    margin-left: 310px;
+    color: blue;
+    width: 40%;
+}
+
+h1{
+    font-family: "Helvetica Neue";
+    color: #5583A6;
+    margin-top: 80px;
+    margin-left: 250px;
+    background-color: white;
+
+}
+button{
+    font-size: 25px;
+    color:white;
+    border-radius: 8px;
+    border: solid rgb(0,172,238) ;
+    background-color: rgb(0,172,238);
+}
+.buttons{
+    margin-top: 4px;
+    margin-left: 590px;
+    color: "00ACEE";
+
 }
