@@ -1,5 +1,5 @@
 body{
-    color:blue;
+    color:black;
 }
 textarea {
     margin-left: 310px;
@@ -13,7 +13,7 @@ textarea {
 
 h1{
     font-family: "Helvetica Neue";
-    color: #5583A6;
+    color: #6F89A9;
     margin-top: 80px;
     margin-left: 250px;
     background-color: white;
@@ -39,6 +39,9 @@ button{
     color: "00ACEE";
 
 }
+h2{
+    margin-top: 0px;
+}
 
 /* Modal Box CSS */
 /*
@@ -59,13 +62,15 @@ body {font-family: Arial, Helvetica, sans-serif;}
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  
 }
 
 /* Modal Header */
 .modal-header {
     padding: 2px 16px;
-    background-color: #5cb85c;
+    background-color: #B5C4D4;
     color: white;
+    height: 30px;
 }
   
 /* Modal Body */
@@ -74,21 +79,24 @@ body {font-family: Arial, Helvetica, sans-serif;}
 /* Modal Footer */
 .modal-footer {
     padding: 2px 16px;
-    background-color: #5cb85c;
+    background-color: #B5C4D4;
     color: white;
+    height: 30px;
 }
 
 /* Modal Content */
 .modal-content {
     position: relative;
-    background-color: #fefefe;
+    background-color: #F3E2BC;
     margin: auto;
     padding: 0;
     border: 1px solid #888;
-    width: 80%;
+    width: 40%;
+    border-radius: 8px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     animation-name: animatetop;
-    animation-duration: 0.4s
+    animation-duration: 0.4s;
+    padding-bottom: 15px;
 }
 
 /* Add Animation */
