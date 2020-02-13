@@ -27,12 +27,22 @@ button{
     background-color: rgb(28,161,241);
     height: 40px;
 }
-.buttons{
+.reset-button{
+    margin-top: 0px;
+    margin-left: 670px;
+    color: "00ACEE";
+}
+.continue-button{
+    margin-top: -39px;
+    margin-left: 747px;
+    color: "00ACEE";
+}
+/* .buttons{
     margin-top: -1px;
     margin-left: 655px;
     color: "00ACEE";
 
-}
+} */
 .button{
     margin-top: -1px;
     margin-left: 655px;
