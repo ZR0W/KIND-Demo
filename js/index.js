@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function()
  {
   
   document.getElementById("clickMe").onclick = message;
-  document.getElementById("deleteMe").onclick = clearContents;
   var modal = document.getElementById("myModal");
   document.getElementById("clickMe").onclick = btClick;
   document.getElementsByClassName("close")[0].onclick = spanClick;
