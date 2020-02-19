@@ -3,7 +3,7 @@ function clearContents(element) {
 }
 
 $(document).ready(function() {
-  var key = ['fuck', 'damn', 'ass', 'shit'];
+  var key = ['fuck', 'damn', 'ass', 'shit','kill','faggot','bitch','die','hate','coward','idiot','stupid','shut up','fag'];
 
   var modal = document.getElementById("myModal");
   // When the user clicks the button, open the modal 
@@ -102,6 +102,12 @@ $(document).ready(function() {
   }
 
 }, false);
+
+
+
+
+
+
 
 // // Highlight word when you click Highlight Button
 // function highlight(text) {
