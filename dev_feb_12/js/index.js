@@ -78,6 +78,7 @@ $(document).ready(function() {
     if(on){
       // $("#secondModal").style.display = "block";
       document.getElementById("secondModal").style.display = 'block';
+      $('#secondcontinue').delay(5000).fadeIn(300);
     }else{
       // $("#secondModal").style.display = "none";
       document.getElementById("secondModal").style.display = 'none';
@@ -89,10 +90,13 @@ $(document).ready(function() {
 
   function secondContinue() {
     //TODO:
+    console.log("gg you have chosen your fate I guesss");
+    secondReturn();
   }
 
   function secondReturn() {
     toggleSecond(false);
+    modalReturn();
   }
 
 }, false);
