@@ -3,7 +3,7 @@ function clearContents(element) {
 }
 
 $(document).ready(function() {
-  var key = ['fuck', 'damn', 'ass'];
+  var key = ['fuck', 'damn', 'ass', 'shit'];
 
   var modal = document.getElementById("myModal");
   // When the user clicks the button, open the modal 
@@ -20,6 +20,10 @@ $(document).ready(function() {
     }else{
       //TODO: assosiate function with message submission
       //submit text as normal
+      console.log("Message submited");
+      console.log($('#inputarea').val())
+      //clear
+      $('#inputarea').val('');
     }
   }
   // When the user clicks on <span> (x), close the modal
@@ -72,21 +76,34 @@ $(document).ready(function() {
 
   function toggleSecond(on){
     if(on){
-      $("#secondModal").style.display = "block";
+      // $("#secondModal").style.display = "block";
+      document.getElementById("secondModal").style.display = 'block';
     }else{
-      $("#secondModal").style.display = "none";
+      // $("#secondModal").style.display = "none";
+      document.getElementById("secondModal").style.display = 'none';
     }
+  }
+
+  $("#secondreturn").click(secondReturn);
+  $("#secondcontinue").click(secondContinue);
+
+  function secondContinue() {
+    //TODO:
+  }
+
+  function secondReturn() {
+    toggleSecond(false);
   }
 
 }, false);
 
-// Highlight word when you click Highlight Button
-function highlight(text) {
-  var inputText = document.getElementById("inputText");
-  var innerHTML = inputText.innerHTML;
-  var index = innerHTML.indexOf(text);
-  if (index >= 0) { 
-   innerHTML = innerHTML.substring(0,index) + "<span class='highlight'>" + innerHTML.substring(index,index+text.length) + "</span>" + innerHTML.substring(index + text.length);
-   inputText.innerHTML = innerHTML;
-  }
-}
+// // Highlight word when you click Highlight Button
+// function highlight(text) {
+//   var inputText = document.getElementById("inputText");
+//   var innerHTML = inputText.innerHTML;
+//   var index = innerHTML.indexOf(text);
+//   if (index >= 0) { 
+//    innerHTML = innerHTML.substring(0,index) + "<span class='highlight'>" + innerHTML.substring(index,index+text.length) + "</span>" + innerHTML.substring(index + text.length);
+//    inputText.innerHTML = innerHTML;
+//   }
+// }
