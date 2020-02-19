@@ -39,6 +39,14 @@ button{
     color: "00ACEE";
 
 }
+.retract-button{
+    margin-left:670px;
+    margin-top:2px;
+}
+.continue-button{
+    margin-left:100px;
+    margin-top:-40px;
+}
 h2{
     margin-top: 0px;
 }
