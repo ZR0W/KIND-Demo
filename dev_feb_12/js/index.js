@@ -67,6 +67,8 @@ $(document).ready(function() {
     }
   }
 
+  
+
   function changeModalText(text){
     console.log(text);
     console.log("modal change fired");
