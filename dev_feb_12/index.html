@@ -25,16 +25,16 @@
       <textarea  id="inputarea" input type="text" name="inputBox" placeholder="Type your hurtful sentence here">
       </textarea>
       <!-- RESET BUTTON THAT DELETES TEXT IN TEXTAREA -->
-        <button type="reset" value="Reset">Retract</button>
+        <div class="retract-button"><button type="reset" value="Reset">Retract</button></div>
     </form>
     
         
     <div class="buttons">
       
-      <button id="clickMe">Continue</button>
+      <div class="continue-button"><button id="clickMe">Continue</button></div>
     
       <!-- HIGHLIGHT WORD ON THE LIST -->
-      <button onclick="highlight('fuck','kill','shit')">Highlight</button>
+      <!-- <button onclick="highlight('fuck','kill','shit')">Highlight</button> -->
 
       <!-- <div id="inputText">
         fuck you
@@ -78,6 +78,26 @@
           <button id='secondreturn'>Retract</button>
           <button id="secondcontinue" style="display: none">Continue</button>
         </div>
+
+      <!-- Second Warning -->
+    <div id="thirdModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <!-- <div class="modal-header">
+          <span class="close">&times;</span>
+        </div> -->
+        <div class="modal-body">
+          <!-- <p>Some text in the Modal Body</p> -->
+          <p>I <span class="bigger">ACCEPT</span> responsibility for saying _______</p>
+          <button id='thirdreturn'>Retract</button>
+          <button id="thirdcontinue" style="display: none">Continue</button>
+        </div>
+
+
+
+
+
         <!-- <div class="modal-footer">
           <h3>Modal Footer</h3>
         </div> -->
