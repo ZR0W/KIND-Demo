@@ -67,13 +67,19 @@ $(document).ready(function() {
     }
   }
 
-  
-
   function changeModalText(text){
     console.log(text);
     console.log("modal change fired");
     $("#myModal").find("modaltext").text(text);
     toggleSecond(true);
+  }
+
+  function toggleFirst(on){
+    if(on){
+      document.getElementById("myModal").style.display = 'block';
+    }else{
+      document.getElementById("myModal").style.display = 'none';
+    }
   }
 
   function toggleSecond(on){
@@ -84,6 +90,7 @@ $(document).ready(function() {
     }else{
       // $("#secondModal").style.display = "none";
       document.getElementById("secondModal").style.display = 'none';
+      $('#secondcontinue').hide();
     }
   }
 
@@ -92,13 +99,43 @@ $(document).ready(function() {
 
   function secondContinue() {
     //TODO:
-    console.log("gg you have chosen your fate I guesss");
-    secondReturn();
+    console.log("gg you have chosen your fate I guesss...however");
+    togglethird(true);
   }
 
   function secondReturn() {
     toggleSecond(false);
     modalReturn();
+  }
+
+  //thid modal related
+  function togglethird(on){
+    if(on){
+      // $("#thirdModal").style.display = "block";
+      document.getElementById("thirdModal").style.display = 'block';
+      $('#thirdcontinue').delay(5000).fadeIn(300);
+    }else{
+      // $("#thirdModal").style.display = "none";
+      document.getElementById("thirdModal").style.display = 'none';
+      $('#thirdcontinue').hide();
+    }
+  }
+
+  $("#thirdreturn").click(thirdReturn);
+  $("#thirdcontinue").click(thirdContinue);
+
+  function thirdContinue() {
+    //TODO:
+    console.log("gg you have chosen your fate I guesss");
+    thirdReturn();
+    alert("message submitted");
+  }
+
+  function thirdReturn() {
+    togglethird(false);
+    modalReturn();
+    toggleSecond(false);
+    toggleFirst(false);
   }
 
 }, false);
